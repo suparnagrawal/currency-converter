@@ -84,6 +84,13 @@ class _CurrencyConv extends State {
   }
 
   @override
+  void dispose(){
+    textEditingController1.dispose();
+    textEditingController2.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
